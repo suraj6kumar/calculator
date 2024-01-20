@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online calculator by suraj </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="frame">
+        <p class="heading"> यह एक ऑनलाइन कैलकुलेटर है| </p>
+        <div class="display">
+            <input type="text" id="display_text">
+        </div>
+            <div class="buttons-group">
+                <input class="button" type="button" value="9" onclick = "display_text.value += '9'" >
+                <input class="button" type="button" value="8" onclick = "display_text.value += '8'" >
+                <input class="button" type="button" value="7" onclick = "display_text.value += '7'" >
+                <input class="button" type="button" value="+" onclick = "display_text.value += '+'" >
+            </div>
+            <div class="buttons-group">
+                <input class="button" type="button" value="6" onclick = "display_text.value += '6'" >
+                <input class="button" type="button" value="5" onclick = "display_text.value += '5'" >
+                <input class="button" type="button" value="4" onclick = "display_text.value += '4'" >
+                <input class="button" type="button" value="-" onclick = "display_text.value += '-'" >
+            </div>
+            <div class="buttons-group">
+                <input class="button" type="button" value="3" onclick = "display_text.value += '3'" >
+                <input class="button" type="button" value="2" onclick = "display_text.value += '2'" >
+                <input class="button" type="button" value="1" onclick = "display_text.value += '1'" >
+                <input class="button" type="button" value="*" onclick = "display_text.value += '*'" >
+                
+            </div>
+            <div class="buttons-group">
+               
+                <input class="button" type="button" value="0" onclick = "display_text.value += '0'" >
+                <input class="button" type="button" value="/" onclick = "display_text.value += '/'" >
+                <input class="button" type="button" value="." onclick = "display_text.value += '.'" >
+                <input class="button" type="button" value="()" onclick = "display_text.value += '()'" >
+                
+            </div>
+            <div class="buttons-group">
+                <input class="buttonlast" type="button" value="clear" onclick = "display_text.value  = ''" >
+                <input class="buttonlast" type="button" value="=" onclick = "display_text.value  = eval(display_text.value)" >
+            </div>
+            
+    </div>
+    
+</body>
+</html>
